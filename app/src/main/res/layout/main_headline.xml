@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_size"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/spacing_normal_10"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tv_field_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/spacing_normal_10"
+        android:gravity="center"
+        android:text="Название документа"/>
+
+    <TextView
+        android:id="@+id/tv_field_date"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tv_field_name"
+        android:layout_marginEnd="@dimen/spacing_normal_10"
+        android:gravity="center"
+        android:text="Дата"/>
+
+    <TextView
+        android:id="@+id/tv_field_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tv_field_date"
+        android:layout_marginEnd="@dimen/spacing_normal_10"
+        android:gravity="center"
+        android:text="Поставщик"/>
+
+    <TextView
+        android:id="@+id/tv_field_quantity_pos"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tv_field_post"
+        android:layout_marginEnd="@dimen/spacing_normal_10"
+        android:gravity="center"
+        android:text="Число позиций"/>
+
+    <TextView
+        android:id="@+id/tv_field_quantity_checked"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tv_field_quantity_pos"
+        android:gravity="center"
+        android:text="Просмотрено"/>
+</RelativeLayout>
