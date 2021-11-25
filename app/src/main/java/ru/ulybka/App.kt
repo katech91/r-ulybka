@@ -7,8 +7,10 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import ru.ulybka.data.remote.IRetrofitService
 import okhttp3.OkHttpClient
-import java.net.Authenticator
 
+/**
+ * Singleton for Retrofit
+ */
 
 class App: Application() {
 
@@ -19,17 +21,6 @@ class App: Application() {
 
         configureRetrofit()
     }
-
-//    var okHttpClient: OkHttpClient = Builder()
-//        .authenticator(okhttp3.Authenticator { route: Route?, response: Response? ->
-//            val request: Request = response.request
-//            if (request.header("Authorization") != null) // Логин и пароль неверны
-//                return@authenticator null
-//            request.newBuilder()
-//                .header("Authorization", Credentials.basic("login", "password"))
-//                .build()
-//        })
-//        .build()
 
     private fun configureRetrofit() {
         val logging = HttpLoggingInterceptor()
@@ -48,14 +39,6 @@ class App: Application() {
                 }
 
             })
-//            .authenticator(Authenticator { -> route: Route?, response: Response?
-//                val request: Request = response.request
-//                if (request.header("Authorization") != null) // Логин и пароль неверны
-//                    return null
-//                request.newBuilder()
-//                    .header("Authorization", Credentials.basic("login", "password"))
-//                    .build()
-//            })
             .build()
 
         val retrofit = Retrofit.Builder()

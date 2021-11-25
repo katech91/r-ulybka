@@ -10,6 +10,8 @@
         android:id="@+id/tv_field_name"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
         android:layout_marginEnd="@dimen/spacing_normal_10"
         android:gravity="center"
         android:text="Название документа"/>
@@ -20,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_toEndOf="@id/tv_field_name"
         android:layout_marginEnd="@dimen/spacing_normal_10"
+        android:layout_centerVertical="true"
         android:gravity="center"
         android:text="Дата"/>
 
@@ -29,6 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_toEndOf="@id/tv_field_date"
         android:layout_marginEnd="@dimen/spacing_normal_10"
+        android:layout_centerVertical="true"
         android:gravity="center"
         android:text="Поставщик"/>
 
@@ -38,6 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_toEndOf="@id/tv_field_post"
         android:layout_marginEnd="@dimen/spacing_normal_10"
+        android:layout_centerVertical="true"
         android:gravity="center"
         android:text="Число позиций"/>
 
@@ -46,6 +51,7 @@
         android:layout_width="40dp"
         android:layout_height="wrap_content"
         android:layout_toEndOf="@id/tv_field_quantity_pos"
+        android:layout_centerVertical="true"
         android:gravity="center"
         android:text="Просмотрено"/>
 </RelativeLayout>

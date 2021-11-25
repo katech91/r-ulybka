@@ -5,23 +5,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.DocumentParticularsActivity">
+    tools:context=".ui.DetailsActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="?attr/actionBarSize">
+        android:layout_height="wrap_content">
 
-        <include layout="@layout/particulars_headline"
-            android:id="@+id/particulars_headline"
+        <include layout="@layout/details_headline"
+            android:id="@+id/details_headline"
             android:visibility="visible"/>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_document_particulars"
+            android:id="@+id/rv_document_details"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/particulars_headline"
-            tools:listitem="@layout/item_document"/>
+            android:layout_below="@id/details_headline"
+            tools:listitem="@layout/item_details"/>
     </RelativeLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
